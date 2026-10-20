@@ -29,7 +29,9 @@ android {
         namespace 'net.nyx.nyx_printer'
     }
 
-    compileSdkVersion 33
+    // Bumped from 33: androidx deps require compileSdk >= 34
+    // (enforced by AGP checkReleaseAarMetadata on release builds).
+    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
